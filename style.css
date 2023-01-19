@@ -187,3 +187,277 @@ aside{
 
 
 }
+
+/* Sobre mim    */
+
+#C-sobre{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0px;
+    width: 100%;
+    flex-wrap: wrap;   /*faz a quebra de linha, ajuda no responsivo*/
+
+}
+
+.image img{
+    width: 400px;
+    height: auto;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+}
+
+.Sobre-mim h1{
+    text-align: center;
+    font-size: 55px;
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+.Sobre-mim h4{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: normal;
+    font-weight: bold;
+    font-family: "Inria Sans";
+}
+
+.Sobre-mim span{
+    color: #fd0bf3;
+}
+
+.Sobre-mim p {
+    margin-top: 25px;
+    font-family: "Inria Sans";
+    padding: 15px;
+}
+
+.Sobre-mim button{
+    background-color: #ef0453;
+    margin-left: 35%;
+    margin-top: 30px;
+    padding: 10px 50px;
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    border-radius: 50px;
+    cursor: pointer;  /*serve pro mouse virar uma mãozinha*/
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+    transition-duration: .9s;  /* animação*/
+}
+
+.Sobre-mim button:hover{
+    background-color: transparent;
+    color: #ef0453;
+    transition: 0.8s;
+}
+
+@media only screen and (max-width: 414px){
+
+    
+
+    .image img{
+        width: 350px;
+        height: auto;
+    }
+
+
+
+    .Sobre-mim p{
+        font-size: 12px;
+        width: 500px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Sobre-mim button{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+}
+
+/*Serviços */
+
+
+.container{
+    width: 100%;
+    background-color: #f3eeee;
+    padding: 50px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: "Inria Sans";
+    font-weight: bold;
+    
+}
+
+.container p{
+    text-align: center;
+    font-family: "Inria Sans";
+    color: #685b5b;
+    margin-top: 25px;
+}
+
+.C-card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #fffbfb;
+    padding: 50px;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px;
+    margin-top: 25px;
+}
+
+.card img{
+    width: 50px;
+    height: auto;
+}
+
+.C-card-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card h3{
+    font-size: 20px;
+    font-family: "Inria Sans";
+    font-weight: 700;
+}
+
+.card h4{
+    font-family: "Inria Sans";
+    font-weight: lighter;
+    color: #beb7b7;
+    margin-top: 15px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: .9s;
+}
+
+@media screen and (max-widht: 414px) {
+
+    .card{
+        margin-top: 35px;
+    }
+    
+    .C-card-2{
+        margin-top: 30px;
+    }
+}
+
+/*Meus projetos*/
+
+.C-projetos{
+    width: 100%;
+    background-color: #FFF;
+    padding: 85px;
+}
+
+.C-projetos h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: "Inria Sans";
+    font-weight: bold;
+    padding: 14%;
+}
+
+.C-projetos p{
+    text-align: center;
+    font-family: "Inria Sans";
+    color: #685b5b;
+    font-weight: lighter;
+    margin-top: 8px;
+}
+
+.img-projetos{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+
+.img-projetos img{
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px;
+}
+
+.C-projetos img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    transition-duration: 0.9s;
+    border: solid 2px #180127;
+}
+
+@media only screen and (max-width: 414px){
+    .img-projetos img{
+        width: 300px;
+        height: auto;
+    }
+
+
+}
+
+/* rodapé */
+
+.C-rodape{
+    width: 100%;
+    background-color: #383535;
+    padding: 50px;
+
+}
+
+.C-rodape h1{
+    text-align: center;
+    color: #FFF;
+    font-family: "Inria Sans";
+    font-weight: lighter;
+}
+
+.C-rodape form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 50px 14px 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+}
+
+.C-rodape form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #c229aa;
+    color: #FFF;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+    margin-top: 28px;
+    right: 100px;
+}
+
+@media only screen and (max-width: 414px){
+    .C-rodape form input:last-child{
+        width: 100px;
+    }
+}
